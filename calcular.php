@@ -44,8 +44,6 @@
             <div class="input-group">
                 <button type="submit" name="operacion" value="sumar">Suma</button>
                 <button type="submit" name="operacion" value="restar">Resta</button>
-                <button type="submit" name="operacion" value="multiplicar">Multiplicación</button>
-                <button type="submit" name="operacion" value="dividir">División</button>
             </div>
         </form>
         <?php
