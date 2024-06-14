@@ -62,8 +62,25 @@
                     case "restar":
                         $resultado = $valor1 - $valor2;
                         break;
+                    case "multiplicar":
+                        $resultado = $valor1 * $valor2;
+                        break;
+                    case "dividir":
+                        if ($valor2 != 0) {
+                            $resultado = $valor1 / $valor2;
+                        } else {
+                            $resultado = "No se puede dividir 0 entre 0 mal ahi :[";
+                        }
+                        break;
+                    default:
+                        $resultado = "Operación no válida";
+                        break;
                 }
-            }    
+                echo "<p>Respuesta: " . htmlspecialchars($resultado) . "</p>";
+            } else {
+                echo "<p>Por favor, ingrese valores numéricos válidos.</p>";
+            }
+        }
         ?>
     </div>
 </body>
